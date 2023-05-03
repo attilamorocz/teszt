@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/@unocss/runtime"></script>
+    <title>Uno CSS</title>
+</head>
+
+<body>
+    <div class="container max-w-7xl border ma mt shadow shadow-teal">
+        <h1 class="text-center text-30 text-indigo-500 hover:text-indigo-800">Uno CSS teszt</h1>
+        <p class="ml-8">bekezdés</p>
+        <button class="btn btn-green">Teszt gomb</button>
+    </div>
+
+
+    <script>
+        console.log(window.innerHeight, window.innerWidth);
+        window.__unocss = {
+        shortcuts: {
+            // shortcuts to multiple utilities
+            'btn': 'py-2 px-4 font-semibold rounded-lg shadow-md',
+            'btn-green': 'text-white bg-green-500 hover:bg-green-700',
+            // single utility alias
+            'red': 'text-red-100'
+        }
+    }
+    </script>
+</body>
+
+</html>

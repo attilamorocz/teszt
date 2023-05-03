@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mont Blanc</h1>
+    <div class="img-holder"></div>
+
+    <script>
+
+        let images_url = ['https://i.ibb.co/1Gb3RLm/1.jpg', 'hibas_url', 'https://i.ibb.co/Q9vgsHW/4.jpg', 'https://i.ibb.co/jrPJ310/5.jpg'];
+        let imgHolder = document.querySelector('.img-holder');
+
+        const renderImages = ()=> {
+            for(let url of images_url) {
+                let img = document.createElement('img');
+                img.src = url;
+                imgHolder.appendChild(img);
+            }
+        }
+
+        renderImages();
+
+    </script>
+</body>
+</html>
